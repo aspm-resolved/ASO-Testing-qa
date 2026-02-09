@@ -29,7 +29,7 @@ if not os.path.exists(TOKEN_FILE):
         "analytics_platform": {
             "service_name": "DataMetrics Analytics",
             "api_key": "dm_api_9z8y7x6w5v4u3t2s1r",
-            "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NDMyMTA5ODc2IiwibmFtZSI6IkFDTUUgQ29ycCIsImFuYWx5dGljc19hY2Nlc3MiOiJ0cnVlIiwiaWF0IjoxNjUxODg0ODAwfQ.QzHJ2_8NXiPd5Vl6r3S1VJqFaC3-U_a9FPRJXBgU8Pg",
+
             "refresh_token": "rt_3e4r5t6y7u8i9o0p1a2s3d4f5g6h7j",
             "expires_at": "2025-12-31T23:59:59Z"
         }
