@@ -34,7 +34,7 @@ jobs:
         name: Register the artifact
         uses: cloudbees-io/register-build-artifact@v2
         with:
-          name: cp-go-repo1
+          name: cp-go-repo2
           version: 0.1
           url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/chitra-image:0.10
 
@@ -42,4 +42,4 @@ jobs:
         uses: docker://alpine:latest
         shell: sh
         run: |
-          echo "artifact ID for cp-go-repo1:${{ cloudbees.version }} is: ${{ steps.register-artifact.outputs.artifact-id }}"
+          echo "artifact ID for cp-go-repo2:${{ cloudbees.version }} is: ${{ steps.register-artifact.outputs.artifact-id }}"
