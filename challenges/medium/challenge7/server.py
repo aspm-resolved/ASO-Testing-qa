@@ -23,7 +23,7 @@ if not os.path.exists(TOKEN_FILE):
             "service_name": "CloudBox Storage",
 
             "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5ODc2NTQzMjEwIiwibmFtZSI6IkFDTUUgQ29ycCIsInN0b3JhZ2VfYWNjZXNzIjoidHJ1ZSIsImlhdCI6MTY1MTg4NDgwMH0.8FhJ7Z5KFUEJFoQW2xeUL9_NOzlKB3j8fKvxU_5qB4Y",
-            "refresh_token": "rt_9i8u7y6t5r4e3w2q1z0x9c8v7b6n5m",
+
             "expires_at": "2025-12-31T23:59:59Z"
         },
         "analytics_platform": {
