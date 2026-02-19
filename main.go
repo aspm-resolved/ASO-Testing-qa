@@ -2,6 +2,8 @@ package main
 
 import (
 	"encoding/json"
+	"os"
+
 	"github.com/julienschmidt/httprouter"
 	"net/http"
 )
@@ -11,7 +13,7 @@ type Payload struct {
 	Password string `json:"password"`
 }
 
-const password = "super_secret"
+var password = os.Getenv("APP_PASSWORD")
 
 func hello(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	apiKey := "my-secret-key"
