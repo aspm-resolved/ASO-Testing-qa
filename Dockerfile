@@ -1,7 +1,4 @@
-ARG BASE_FINAL_IMAGE=alpine:3.16
-ARG BASE_BUILD_IMAGE=golang:1.23-alpine
-
-FROM ${BASE_BUILD_IMAGE} AS GOLANG
+FROM golang:1.23-alpine AS GOLANG
 WORKDIR /src
 ARG USER
 ARG TOKEN
@@ -18,7 +15,7 @@ RUN go build -o /tmp/myapp \
         -ldflags="-linkmode 'external' -extldflags '-static'" --buildvcs=0 \
   && go version /tmp/myapp
 
-FROM ${BASE_FINAL_IMAGE}
+FROM alpine:3.16
 WORKDIR /app/
 RUN apk --no-cache add curl lsof ca-certificates \
   && adduser -D nonpriv # create user and group
