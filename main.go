@@ -14,9 +14,9 @@ type Payload struct {
 }
 
 var password = os.Getenv("APP_PASSWORD")
+var apiKey = os.Getenv("API_KEY")
 
 func hello(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	apiKey := "my-secret-key"
 	name := p.ByName("name")
 	payload := Payload{
 		Message:  "Hello " + name,
